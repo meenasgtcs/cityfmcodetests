@@ -1,0 +1,319 @@
+﻿table tr:nth-child(2n-1) td {
+    background: #F5F5F5;
+}
+
+@media print {
+
+    /* style sheet for print goes here */
+    .noprint {
+        /*visibility: hidden;*/
+        display: none;
+    }
+
+    .prntonly {
+        /*visibility: hidden;*/
+        display: inline-flexbox;
+        /*display:inline-block;*/
+    }
+
+    .mypreloader {
+        visibility: hidden;
+    }
+
+    .pheader {
+        text-align: center;
+        font-size: smaller;
+        padding: 10px 0;
+        margin-bottom: 30px;
+    }
+
+    .prntmargin {
+        margin-top: 15px;
+    }
+
+    .header-wrap {
+        display: none;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    @page {
+        page-break-before: avoid !important;
+    }
+
+    a {
+        color: #5D6975;
+        text-decoration: underline;
+    }
+
+    body {
+        position: relative;
+        width: 21cm;
+        height: 29.7cm;
+        margin: 0 auto;
+        color: #001028;
+        /*background: #FFFFFF;*/
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-family: Arial;
+    }
+
+
+    /*header {
+  padding: 10px 0;
+  margin-bottom: 5px;
+}*/
+    #logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+        #logo img {
+            width: 90px;
+        }
+
+    h1 {
+        border-top: 1px solid #5D6975;
+        border-bottom: 1px solid #5D6975;
+        color: #5D6975;
+        font-size: 1.1em;
+        line-height: 1.3em;
+        font-weight: normal;
+        text-align: center;
+        margin: 0 0 20px 0;
+        background: url(dimension.png);
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #project {
+        float: left;
+        font-size: 1.1em;
+    }
+
+        #project span {
+            color: #5D6975;
+            text-align: right;
+            width: 52px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+    #company span {
+        color: #5D6975;
+    }
+
+    #company {
+        float: right;
+        text-align: right;
+        font-size: 1.1em;
+    }
+
+    #project,
+    #company {
+        white-space: nowrap;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 20px;
+        border-bottom: hidden;
+        /*page-break-after:auto !important;*/
+    }
+
+
+
+        table th, table .th,
+        table td {
+            /*text-align: center;*/
+            border-right: hidden;
+            border-left: hidden;
+            font-size: .8em;
+            /*overflow-wrap:break-word;
+    word-wrap:break-word;*/
+        }
+
+    th {
+        border-bottom: 1px solid #C1CED9;
+    }
+
+    .th {
+        border-bottom: 1px solid #C1CED9;
+    }
+    /*td {
+        /*break-after:avoid-page !important;
+break-after:avoid !important;*/
+    /*word-wrap:break-word;*/
+
+    /*}*/
+    table th {
+        padding: 5px 20px;
+        color: #5D6975;
+        /*border-bottom: 1px solid #C1CED9;*/
+        border-top: hidden;
+        white-space: nowrap;
+        font-weight: normal;
+    }
+
+    table .th {
+        /*border-bottom: 1px solid #C1CED9;*/
+        border-top: hidden;
+    }
+
+    table .service,
+    table .desc {
+        text-align: left;
+        font-size: .8em;
+    }
+
+    table td {
+        padding: 3px;
+        /*text-align: right;*/
+    }
+
+        table td.service,
+        table td.desc {
+            vertical-align: top;
+        }
+
+        table td.unit,
+        table td.qty,
+        table td.total {
+            font-size: .8em;
+        }
+
+        table td.grand {
+            border-top: 1px solid #5D6975;
+        }
+
+    #notices .notice {
+        color: #5D6975;
+        font-size: .8em;
+    }
+
+    /*footer {
+  color: #5D6975;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #C1CED9;
+  padding: 8px 0;
+  text-align: center;
+}*/
+    footer {
+        display: none;
+    }
+}
+
+
+/*tr    { page-break-inside:avoid; page-break-after:auto }*/
+table, td, th {
+}
+
+    table td.grand {
+        border-top: 1px solid #5D6975;
+    }
+
+table {
+    border-bottom: .5px solid black;
+    table-layout: fixed;
+    /*page-break-after:auto !important;*/
+}
+
+td {
+    border-right: .3px solid black;
+    /*word-wrap:break-word;*/ /*word-wrap:break-word;*/
+    /*word-break:break-all;*/
+    /*overflow-wrap:break-word;
+word-wrap:break-word;*/
+}
+
+.tdclass {
+    border-right: .3px solid black;
+    border-left: .3px solid black;
+}
+
+.th {
+    border: .3px solid black;
+    font-weight: bold;
+}
+
+th {
+    border: .3px solid black;
+    font-weight: bold;
+}
+
+.total {
+    text-align: right;
+}
+
+.qty {
+    text-align: center;
+}
+/*table tr:nth-child(2n-1) td {
+  background: #F5F5F5;
+}*/
+#printOnly {
+    display: none;
+}
+
+#grdprintOnly {
+    visibility: hidden;
+}
+
+.mycard {
+    position: relative;
+    padding: 16px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    /*word-wrap:break-word;*/
+    overflow-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /*border:1px solid rgba(0,0,0,.125);
+      border-radius:.25rem*/
+}
+
+@media print {
+    .mycard {
+        position: relative;
+        padding: 0px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        /*word-wrap:break-word;*/
+        overflow-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        /*border:1px solid rgba(0,0,0,.125);
+      border-radius:.25rem*/
+    }
+
+    #printOnly {
+        text-align: center;
+        display: block;
+    }
+
+    #grdprintOnly {
+        visibility: visible;
+        width: 66.7%;
+    }
+}
+
+.ponly {
+    /*visibility: hidden;*/
+    display: none;
+    /*display:inline-block;*/
+}

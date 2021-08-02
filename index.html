@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link data-require="bootstrap@3.0.0" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <script data-require="angular.js@1.4.6" data-semver="1.4.6" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="script.js"></script>
+    <link href="Product.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="panel-body" ng-app="productApp" ng-controller="productController">
+        <div class="form-group col-md-6">
+            <button type="button" ng-click="viewProducts()">View Products</button>
+            <div class="row" id="showDiv" style="display:none">
+                <div class="col-md-12">
+                    <div class="mycard">
+                        <div class="row" style="font-size:14px;">
+                            <div class="col-md-12">
+                                <main>
+                                    <table width="100%">
+                                        <thead>
+                                            <tr>
+                                                <td class="service th">Product Id</td>
+                                                <td class="service th">Product Name</td>
+                                                <td class="service th">Unit Price</td>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="product in products">
+                                                <td class="service">{{product.productId}}</td>
+                                                <td class="service">{{product.name}}</td>
+                                                <td class="service">{{product.unitPrice+(product.unitPrice*0.20)| number : 2}}</td>
+                                            </tr>
+                                         </tbody>
+                                    </table>
+                                </main>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
+
